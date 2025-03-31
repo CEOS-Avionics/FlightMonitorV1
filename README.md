@@ -18,7 +18,7 @@
 ### Mensagens UDP:
 - Em um terminal Linux forneça o comando ``nc -u -l <usdPort>`` para escutar mensagens enviadas pelo controlador de voo. usdPort é a mesma definida na linha 69 de main.ino. 
 - Abra outra janela do terminal Linux. O mesmo comando deverá ser fornecido duas vezes. A primeira, quando o foguete se encontrar no local de lançamento, devendo este permanecer completamente estático até o lançamento. A segunda é logo antes do lançamento, após o recebimento da mensagem "Foguete pronto para o lançamento!" no primeiro terminal. 
-- O comando é o seguinte: ``echo "y" | nc -u <ip_da_ESP32> <usdPort>``. usdPort continua a mesma, ip_da_ESP32 é fornecido no primeiro terminal assim que o controlador se conecta à rede WiFi.  Ele envia a flag 'y' para o controlador.
+- O comando é o seguinte: ``echo "y" | nc -u <ip_da_ESP32> <usdPort>``. usdPort continua a mesma, faça upload de OTAtest.ino, o endereço ip_da_ESP32 vai aparecer no monitor serial.  Ele envia a flag 'y' para o controlador.
 - A primeira flag diz ao controlador que ele deve determinar o referencial absoluto, a segunda inicia filtro de Kalman. 
 
 ### Ler e visualizar dados:

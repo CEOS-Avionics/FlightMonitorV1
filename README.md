@@ -6,7 +6,7 @@
 - **[kalman](https://github.com/mherb/kalman)**
 - Eigen 3.7 (a versão 3.4.0 não foi compatível com a lib kalman)
 ### Calibragem do ICM-20948:
-- Faça upload do código de exemplo `Example11_DMP_Bias_Save_Restore_ESP32`
+- Faça upload do código de exemplo `Example11_DMP_Bias_Save_Restore_ESP32` da lib SparkFun_ICM-20948_ArduinoLibrary
 - Siga as instruções que irão aparecer no monitor serial. Os biases do icm serão coletados em forma de valores brutos e armazenados na EEPROM da ESP32.
 - É esperado que os biases do sensor se mantenham constantes durante alguns minutos, por isso é recomendado calibrá-lo um pouco antes da decolagem.
 - Os biases estão incluídos no vetor de estados do filtro de Kalman,  portanto é esperado que se ajustem se sofrerem alguma mudança.
